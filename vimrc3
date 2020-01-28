@@ -1,0 +1,102 @@
+set nocompatible              " be iMproved, required
+" filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+
+" Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'tpope/vim-surround'
+
+" All of your Plugins must be added before the following line
+" call vundle#end()            " required
+" filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+ " Startup {{{
+augroup ft_vim
+    au!
+    au FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
+"  General {{{
+" set nocompatible
+set swapfile
+set dir=/Users/song/Dropbox/文档/vimswap
+set undofile
+set undodir=/Users/song/Dropbox/文档/vimswap
+set history=1000
+set autochdir
+set whichwrap+=[,],h,l
+set backspace=indent,eol,start whichwrap+=[,],h,l,<,>
+set clipboard+=unnamed
+" }}}
+
+"  Lang&Encoding {{{
+set fileencodings=utf-8
+set encoding=utf-8
+let $LANG = 'en-US.UTF-8'
+" }}}
+
+" GUI {{{
+ 
+
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+set number
+set cursorline
+set hlsearch
+
+set lines=45 columns=100
+
+set splitbelow
+set splitright
+
+set guioptions-=e
+set nolist
+"}}}
+
+" Format {{{
+set autoindent
+set smartindent
+set tabstop=4
+set expandtab
+set softtabstop=4
+set foldmethod=indent
+set scrolloff=10
+set incsearch
+set ignorecase
+set smartcase
+
+syntax on
+color codedark
+"}}}
+
+
+set showmode
+
+set guifont=FiraCode-Regular:h18
+
+" map <C-n> :NERDTreeToggle<CR>
+" autocmd vimenter * NERDTree

@@ -1,0 +1,6 @@
+.DS_Store
+.netrwhist
+*.swo
+*.swp
+/test/*
+/meta
