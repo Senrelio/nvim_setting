@@ -1,20 +1,11 @@
 [submodule "pack/plugin/start/auto-pairs"]
 	path = pack/plugin/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "pack/plugin/start/commentary"]
-	path = pack/plugin/start/commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "pack/plugin/start/surround"]
-	path = pack/plugin/start/surround
-	url = https://github.com/tpope/vim-surround.git
 [submodule "pack/plugin/start/repeat"]
 	path = pack/plugin/start/repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "pack/plugin/start/neosnippet.vim"]
 	path = pack/plugin/start/neosnippet.vim
-	url = https://github.com/Shougo/neosnippet.vim.git
-[submodule "neosnippet.vim"]
-	path = neosnippet.vim
 	url = https://github.com/Shougo/neosnippet.vim.git
 [submodule "pack/plugin/start/LanguageClient-neovim"]
 	path = pack/plugin/start/LanguageClient-neovim
