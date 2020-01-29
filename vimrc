@@ -66,7 +66,7 @@ nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 " Or map each action separately
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> D :call LanguageClient#textDocument_definition({'gotoCmd': 'tabnew'})<CR>
-nnoremap <silent> F2 :call LanguageClient#textDocument_rename()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 " }}} complete
 
 " begin rust.vim {{{
