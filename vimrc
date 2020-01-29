@@ -53,22 +53,22 @@ tnoremap <Esc> <C-\><C-n>
 tnoremap <c-j> <C-\><C-n><c-w>w
 nnoremap <c-j> <c-w>w
 
-" << LSP >> {{{
-let g:LanguageClient_autoStart = 1
-let g:LanguageClient_changeThrottle = 1
-let g:LanguageClient_serverCommands = {
-    \ 'java': ['/usr/local/bin/jdtls', '-data', getcwd()],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'python': ['/Library/Frameworks/Python.framework/Versions/3.7/bin/pyls']}
-
-nnoremap <leader>f :call LanguageClient#textDocument_formatting()<return>
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> D :call LanguageClient#textDocument_definition({'gotoCmd': 'tabnew'})<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-" }}} complete
-
+" " << LSP >> {{{
+" let g:LanguageClient_autoStart = 1
+" " let g:LanguageClient_changeThrottle = 1
+" let g:LanguageClient_serverCommands = {
+"     \ 'java': ['/usr/local/bin/jdtls', '-data', getcwd()],
+"     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+"     \ 'python': ['/Library/Frameworks/Python.framework/Versions/3.7/bin/pyls']}
+" 
+" nnoremap <leader>f :call LanguageClient#textDocument_formatting()<return>
+" nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" " Or map each action separately
+" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+" nnoremap <silent> D :call LanguageClient#textDocument_definition({'gotoCmd': 'tabnew'})<CR>
+" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+" " }}} complete
+" 
 " begin rust.vim {{{
 
     " reformat rust file when save

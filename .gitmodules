@@ -4,30 +4,21 @@
 [submodule "pack/plugin/start/repeat"]
 	path = pack/plugin/start/repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "pack/plugin/start/neosnippet.vim"]
-	path = pack/plugin/start/neosnippet.vim
-	url = https://github.com/Shougo/neosnippet.vim.git
-[submodule "pack/plugin/start/LanguageClient-neovim"]
-	path = pack/plugin/start/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim.git
 [submodule "pack/plugin/start/vim-commentary"]
 	path = pack/plugin/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule "pack/plugin/start/deoplete.nvim"]
-	path = pack/plugin/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim.git
 [submodule "pack/plugin/start/vim-repeat"]
 	path = pack/plugin/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "pack/plugin/start/vim-surround"]
 	path = pack/plugin/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "pack/plugin/start/neosnippet-snippets"]
-	path = pack/plugin/start/neosnippet-snippets
-	url = https://github.com/Shougo/neosnippet-snippets.git
 [submodule "pack/plugin/start/rust.vim"]
 	path = pack/plugin/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "pack/plugin/start/vim-renamer"]
 	path = pack/plugin/start/vim-renamer
 	url = https://github.com/qpkorr/vim-renamer.git
+[submodule "pack/coc/start/coc.nvim"]
+	path = pack/coc/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
