@@ -1,0 +1,9 @@
+{
+   "suggest.snippetIndicator": "<=",
+   "suggest.noselect": false,
+   "diagnostic.virtualText": true,
+   "coc.preferences.jumpCommand": "tab drop",
+   "list.source.files.excludePatterns": ["**/target/**","**/.git/**"],
+   "list.source.outline.defaultOptions": ["--number-select"],
+   "list.source.quickfix.defaultOptions": ["--number-select"]
+}
