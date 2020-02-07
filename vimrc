@@ -1,5 +1,5 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
-set runtimepath+=~/.vim/pack/plugin/start/LanguageClient-neovim
+" set runtimepath+=~/.vim/pack/plugin/start/LanguageClient-neovim
 let &packpath = &runtimepath
 
 set path+=**
