@@ -6,7 +6,24 @@ set path+=**
 
 let mapleader=' '
 
-colorscheme tomorrow-night-eighties
+function! s:changeColors()
+    let current_hour=strftime('%H')
+    if current_hour>6 && current_hour<19
+        packadd! my-dracula-theme
+        colorscheme dracula
+        " set background=dark
+        " colorscheme PaperColor
+    else
+        packadd! my-dracula-theme
+        colorscheme dracula
+        " colorscheme tomorrow-night-eighties
+        " source '~/.vim/colors/Tomorrow-Night-Blue.vim'
+    endif
+endfunction
+        
+call s:changeColors()
+
+" colorscheme tomorrow-night-eighties
 syntax enable
 
 set tabstop=4
@@ -141,15 +158,21 @@ nmap <silent> <F2> <Plug>(coc-rename)
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ coc#expandable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand',''])\<CR>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
+
+" \ coc#expandableOrJumpable() ? 
+" \<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
 
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_next = '<c-j>'
+let g:coc_snippet_prev = '<c-k>'
+
+" let g:coc_snippet_next = '<TAB>'
 
 " }}}
