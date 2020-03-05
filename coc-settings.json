@@ -6,5 +6,7 @@
    "list.source.files.excludePatterns": ["**/target/**","**/.git/**"],
    "list.source.outline.defaultOptions": ["--number-select"],
    "list.source.quickfix.defaultOptions": ["--number-select"],
-   "suggest.autoTrigger": "none"
+   "suggest.autoTrigger": "always",
+   "emmet.showExpandedAbbreviation": "always",
+   "coc.preferences.formatOnSaveFiletypes": ["rust"]
 }

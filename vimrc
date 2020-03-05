@@ -3,21 +3,21 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 set path+=**
+set wildignore+=**/node_modules/**
+set wildignore+=**/target/**
 
 let mapleader=' '
 
 function! s:changeColors()
     let current_hour=strftime('%H')
     if current_hour>6 && current_hour<19
-        packadd! my-dracula-theme
+        " colorscheme xcodedark
+        packadd! vim
         colorscheme dracula
-        " set background=dark
-        " colorscheme PaperColor
     else
-        packadd! my-dracula-theme
+        " colorscheme xcodedark
+        packadd! vim
         colorscheme dracula
-        " colorscheme tomorrow-night-eighties
-        " source '~/.vim/colors/Tomorrow-Night-Blue.vim'
     endif
 endfunction
         
@@ -87,11 +87,12 @@ set incsearch
 set hlsearch
 
 " customized shortcut
-nnoremap <leader>h :noh<return>
+nnoremap <leader>h :noh<CR>
 nnoremap <leader>; $a;<esc>
 inoremap <c-o> <esc>$a;
 nnoremap <leader>, $a,<esc>
 inoremap <c-l> <esc>$a,
+nnoremap <leader>f :call CocAction('format')<CR>
 
 set foldenable
 set foldlevelstart=10
