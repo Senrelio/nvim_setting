@@ -142,7 +142,7 @@ nnoremap <c-j> <c-w>w
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " map jump actions
-nmap <silent> D <Plug>(coc-definition)
+nmap <leader>b <Plug>(coc-definition)
 nmap <silent> <F4> <Plug>(coc-diagnostic-next)
 nmap <silent> <F3> <Plug>(coc-diagnostic-prev)
 
